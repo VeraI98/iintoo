@@ -1,85 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iintoo</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iintoo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-
 <body>
   <div class="container">
 
+
     <div class="left">
-      <img src="img/bg.jpg" alt="fon" class="fon">
-        <img src="img/logo.svg" alt="logo" class="logo">
+      <img src="img/bg.jpg" alt="Background" class="fon">
+      <img src="img/logo.svg" alt="Logo" class="logo">
     </div>
+
 
     <div class="right">
-      <h1>Get iintoo it today</h1>
-      <p>There is no charge or obligation upon registration.</p>
+      <h1 class="title">Get iintoo it today</h1>
+      <p class="subtitle">There is no charge or obligation upon registration.</p>
 
-    <div class="btn-group">
-      <button class="btn facebook">
-        <img src="img/facebook.svg" alt="Facebook">
-        Register with Facebook
-      </button>
-      <button class="btn linkedin">
-        <img src="img/linkedin.svg" alt="LinkedIn">
-        Register with LinkedIn
-      </button>
-    </div>
 
-      <p class="center">OR</p>
-
-      <div class="input">
-          <div class="input-group">
-            <input type="email" placeholder="Email">
-          </div>
-          <div class="input-group">
-            <input type="tel" placeholder="Phone">
-          </div>
+      <div class="btn-group">
+        <button class="btn facebook">
+          <img src="img/facebook.svg" alt="Facebook">
+          Register with Facebook
+        </button>
+        <button class="btn linkedin">
+          <img src="img/linkedin.svg" alt="LinkedIn">
+          Register with LinkedIn
+        </button>
       </div>
 
-      <h1>What type of investor are you?</h1>
-      <p>Select the type of investor you are below.</p>
+
+      <div class="lin_conteiner">
+        <div class="line"></div>
+        <p class="center">OR</p>
+        <div class="line"></div>
+      </div>
+
+
+      <div class="input">
+        <div class="input-group">
+          <input type="text" id="email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-group">
+          <input type="text" id="phone" required>
+          <label for="phone">Phone</label>
+        </div>
+      </div>
+
+
+      <h1 class="title">What type of investor are you?</h1>
+      <p class="subtitle">Select the type of investor you are below.</p>
 
       <div class="radio-group">
         <label>
           <input type="radio" name="investor" value="individual" checked>
           <span>Individual</span>
+          <img src="img/info.png" alt="Info" class="info-icon">
+          <div class="tooltip">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.</div>
         </label>
+
         <label>
           <input type="radio" name="investor" value="business">
           <span>Business</span>
+          <img src="img/info.png" alt="Info" class="info-icon">
+          <div class="tooltip">I am investing on behalf of a business entity.</div>
         </label>
+
         <label>
           <input type="radio" name="investor" value="ira">
           <span>IRA</span>
+          <img src="img/info.png" alt="Info" class="info-icon">
+          <div class="tooltip">I am investing through an Individual Retirement Account (IRA).</div>
         </label>
+
         <label>
           <input type="radio" name="investor" value="trust">
           <span>Trust</span>
+          <img src="img/info.png" alt="Info" class="info-icon">
+          <div class="tooltip">I am investing on behalf of a trust.</div>
         </label>
       </div>
 
-<p id="radio-message" class="message">
-  
-</p>
 
-
-      <label>
+      <label class="terms">
         <input type="checkbox">
         I agree to the terms and receiving notifications from iintoo  
         <a href="#" target="_blank">View full terms</a>
       </label>
 
 
-      <button class="btn_submit"> Create Account</button>
+      <button class="btn_submit">Create Account</button>
     </div>
   </div>
 </body>
